@@ -1,0 +1,23 @@
+-Creating a docker image for backend:
+
+=> docker build -t backend-image .
+
+-Runninga an image:
+
+=> docker run -p 3000:3000 backend-image
+
+-Running a docker compose app
+
+=> docker-compose up 
+
+-Force docker to re-run and clean cache
+
+=> docker-compose up --build
+
+-Build docker image for publishing to dockerhub
+
+=> docker build -t 2100444/backend-image .
+
+-Pushing to dockerhub now
+
+=> docker push 2100444/backend-image
